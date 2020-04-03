@@ -39,7 +39,7 @@ function onLinkContextMenu(ev, params) {
     let url = params.linkURL || params.srcURL;
 
     if (url.startsWith('vector://vector/webapp')) {
-        url = "https://riot.im/app/" + url.substring(23);
+        url = "https://onescrin.citural.com.ng" + url.substring(23);
     }
 
     const popupMenu = new Menu();
