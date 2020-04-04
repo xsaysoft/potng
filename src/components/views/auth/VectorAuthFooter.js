@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /*
 Copyright 2015, 2016 OpenMarket Ltd
 Copyright 2019 New Vector Ltd
@@ -22,9 +23,10 @@ import { _t } from 'matrix-react-sdk/src/languageHandler';
 const VectorAuthFooter = () => {
     const brandingConfig = SdkConfig.get().branding;
     let links = [
-        {"text": "blog", "url": "https://blog.riot.im"},
-        {"text": "twitter", "url": "https://twitter.com/@RiotChat"},
-        {"text": "github", "url": "https://github.com/vector-im/riot-web"},
+        {"text": "Blog", "url": "https://medium.com/@onescrin"},
+        {"text": "Twitter", "url": "https://twitter.com/onescrin"},
+        {"text": "Github", "url": "https://github.com/OneScrinTeam/one-screen-web"},
+        {"text": "LinkedIn", "url": "https://www.linkedin.com/mwlite/company/onescrin"},
     ];
 
     if (brandingConfig && brandingConfig.authFooterLinks) {
@@ -43,7 +45,7 @@ const VectorAuthFooter = () => {
     return (
         <div className="mx_AuthFooter">
             {authFooterLinks}
-            <a href="https://matrix.org" target="_blank" rel="noreferrer noopener">{ _t('powered by Matrix') }</a>
+            <a href="https://onescrin.citural.com.ng" target="_blank" rel="noreferrer noopener">{ _t('Powered by OneScrin') }</a>
         </div>
     );
 };

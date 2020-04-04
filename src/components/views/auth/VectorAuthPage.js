@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /*
 Copyright 2019 New Vector Ltd
 
@@ -27,13 +28,16 @@ export default class VectorAuthPage extends React.PureComponent {
         const AuthFooter = sdk.getComponent('auth.AuthFooter');
 
         const brandingConfig = SdkConfig.get().branding;
-        let backgroundUrl = "themes/riot/img/backgrounds/valley.jpg";
+        let backgroundUrl = "themes/riot/img/backgrounds/bg1.png";
         if (brandingConfig && brandingConfig.welcomeBackgroundUrl) {
             backgroundUrl = brandingConfig.welcomeBackgroundUrl;
         }
 
         const pageStyle = {
             background: `center/cover fixed url(${backgroundUrl})`,
+            backgroundBlendMode: "overlay",
+            backgroundColor: 'rgb(49, 43, 43)',
+
         };
 
         const modalStyle = {

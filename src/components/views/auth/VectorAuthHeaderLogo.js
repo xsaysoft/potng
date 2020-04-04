@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /*
 Copyright 2015, 2016 OpenMarket Ltd
 Copyright 2019 New Vector Ltd
@@ -30,14 +31,15 @@ export default class VectorAuthHeaderLogo extends React.PureComponent {
 
     render() {
         const brandingConfig = SdkConfig.get().branding;
-        let logoUrl = "themes/riot/img/logos/riot-im-logo-black-text.svg";
+        let logoUrl = "themes/riot/img/logos/one-scrin.png";
         if (brandingConfig && brandingConfig.authHeaderLogoUrl) {
             logoUrl = brandingConfig.authHeaderLogoUrl;
         }
 
         return (
             <div className="mx_AuthHeaderLogo">
-                <img src={logoUrl} alt="Riot" />
+                <img src={logoUrl} alt="OneScrin" />
+                
             </div>
         );
     }

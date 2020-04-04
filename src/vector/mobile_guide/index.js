@@ -10,7 +10,7 @@ function onBackToRiotClick() {
 function renderConfigError(message) {
     const contactMsg = "If this is unexpected, please contact your system administrator " +
         "or technical support representative.";
-    message = `<h2>Error loading Riot</h2><p>${message}</p><p>${contactMsg}</p>`;
+    message = `<h2>Error loading OneScrin</h2><p>${message}</p><p>${contactMsg}</p>`;
 
     const toHide = document.getElementsByClassName("mx_HomePage_container");
     const errorContainers = document.getElementsByClassName("mx_HomePage_errorContainer");
@@ -87,7 +87,7 @@ async function initPage() {
     if (!hsUrl) {
         return renderConfigError("Unable to locate homeserver");
     }
-
+ 
     if (hsUrl && !hsUrl.endsWith('/')) hsUrl += '/';
     if (isUrl && !isUrl.endsWith('/')) isUrl += '/';
 
