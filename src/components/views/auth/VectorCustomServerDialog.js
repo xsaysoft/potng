@@ -31,8 +31,6 @@ const VectorCustomServerDialog = ({onFinished}) => {
             <div className="mx_Dialog_content">
                 <p>{_t(
                     "You can use the custom server options to sign into other " +
-                    "Matrix servers by specifying a different homeserver URL. This " +
-                    "allows you to use Riot with an existing Matrix account on a " +
                     "different homeserver.",
                 )}</p>
             </div>

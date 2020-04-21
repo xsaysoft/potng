@@ -76,8 +76,7 @@ body {
 
 .mx_HomePage_container {
     display: block ! important;
-    margin: 70px 20px;
-    /* text-align: center; */
+    margin: 10px 20px;
 }
 
 .mx_HomePage_errorContainer {
@@ -94,7 +93,6 @@ body {
 .mx_HomePage_container h4 {
     font-weight: 600;
     margin-bottom: 32px;
-    text-align: center;
 }
 
 .mx_Spacer {
@@ -129,7 +127,7 @@ body {
     padding: 14px 28px;
   }
   .mx_HomePage_header {
-      justify-content: center;
+      justify-content: left;
   }
   .mx_Spacer {
       margin-top: 24px;
@@ -147,16 +145,12 @@ body {
 <body>
 
   <div class="mx_HomePage_errorContainer">
-     
     <!-- populated by JS if needed -->
-    
   </div>
-  <br><br><br>
 
   <div class="mx_HomePage_container">
-      <div class="mx_HomePage_header"  >
+      <div class="mx_HomePage_header">
           <span class="mx_HomePage_logo">
-
               <!-- <svg width="34px" height="42px" viewBox="0 0 34 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                       <g id="blue" transform="translate(1.000000, 1.000000)">
@@ -167,18 +161,15 @@ body {
                       </g>
                   </g>
               </svg> -->
-              <img src="../../../webapp/welcome/images/one-scrin.png" alt="" width="80px">
           </span>
-          <p>Set up <span style="color: #368BD6; font-weight: bolder;">Onescrin</span><br> <span style="text-align: center;"> on iOS or Android </span></p>  
-        
+          <p>Set up PotNG on iOS or Android</p>
       </div>
-      <p style="text-align: center; font-weight: 600;">Coming Soon</p>
-      <!-- <div class="mx_HomePage_col">
+      <div class="mx_HomePage_col">
         <div class="mx_HomePage_row">
           <div>
               <h2 id="step1_heading">Install the app</h2>
               <p><strong>iOS</strong> (iPhone or iPad)</p>
-              <a href="https://itunes.apple.com/app/riot-im/id1083446067?mt=8" target="_blank" class="mx_ClearDecoration">
+              <a href="https://itunes.apple.com/app/" target="_blank" class="mx_ClearDecoration">
                 <svg width="144px" height="48px" viewBox="0 0 120 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <desc>Download on the App Store.</desc>
                     <defs></defs>
@@ -230,10 +221,10 @@ body {
                 </svg>
               </a>
               <p class="mx_Spacer"><strong>Android</strong></p>
-              <a href="https://play.google.com/store/apps/details?id=im.vector.app" target="_blank" class="mx_ClearDecoration">
+              <a href="https://play.google.com/store/apps/" target="_blank" class="mx_ClearDecoration">
                 <svg width="162px" height="48px" viewBox="0 0 162 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                --> <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch 
-                  <desc>Created with Sketch.</desc>
+                    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+                    <desc>Created with Sketch.</desc>
                     <defs>
                         <linearGradient x1="91.488428%" y1="4.9481245%" x2="-38.3517333%" y2="71.9074222%" id="linearGradient-1">
                             <stop stop-color="#00A0FF" offset="0%"></stop>
@@ -278,7 +269,7 @@ body {
                     </g>
                 </svg>
               <a href="https://f-droid.org/repository/browse/?fdid=im.vector.alpha" target="_blank" class="mx_ClearDecoration">
-                <svg width="164px" height="48px" viewBox="0 0 157 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <!-- <svg width="164px" height="48px" viewBox="0 0 157 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <desc>Get it on F-Droid.</desc>
                     <defs>
                         <radialGradient cx="0.55528181%" cy="0.456156968%" fx="0.55528181%" fy="0.456156968%" r="99.5501799%" gradientTransform="translate(0.005553,0.004562),scale(0.985441,1.000000),rotate(90.000001),translate(-0.005553,-0.004562)" id="radialGradient-1">
@@ -330,12 +321,12 @@ body {
                             <path d="M8.89152679,5.74242683 C8.53321466,5.73295225 8.20186636,5.93202601 8.04184972,6.25291205 C7.88183308,6.57379808 7.92213189,6.95837436 8.14518804,7.23908171 L10.8014598,10.6784232 C10.7075486,10.9245568 10.6536163,11.19065 10.6536163,11.4705768 L10.6536163,16.5785402 C10.6536163,17.8053098 11.6406977,18.7928512 12.8668957,18.7928512 L36.4760511,18.7928512 C37.7022491,18.7928512 38.6893306,17.8052817 38.6893306,16.5785402 L38.6893306,11.4705768 C38.6893306,11.1904873 38.6360487,10.9241305 38.5420337,10.6778622 L41.1977728,7.23908171 C41.4136365,6.96742572 41.4588967,6.59756916 41.3149131,6.28183678 C41.1709296,5.96610439 40.8620538,5.75789519 40.5154957,5.74295976 C40.2117646,5.72988939 39.9211038,5.86740249 39.7384859,6.11056707 L37.2114307,9.3827378 C36.9843414,9.30055488 36.7376271,9.25483537 36.4796986,9.25483537 L12.8705432,9.25483537 C12.6122305,9.25483537 12.3657882,9.30072317 12.1356991,9.38138305 L9.60687766,6.10921232 C9.43781797,5.88409848 9.17527379,5.74853032 8.89392945,5.74107207 L8.89152679,5.74242683 Z M12.8669911,19.6341463 C11.640793,19.6341463 10.6537116,20.6216878 10.6537116,21.8484573 L10.6537116,36.4930061 C10.6537116,37.7197756 11.640793,38.7073171 12.8669911,38.7073171 L36.4761464,38.7073171 C37.7023445,38.7073171 38.6894259,37.7197756 38.6894259,36.4930061 L38.6894259,21.8484573 C38.6922295,20.6232866 37.7053723,19.635689 36.4802116,19.635689 L12.8710562,19.635689 L12.8669911,19.6341463 Z" id="Shape" fill="url(#radialGradient-1)" fill-rule="nonzero"></path>
                         </g>
                     </g>
-                </svg>
+                </svg> -->
               </a>
           </div>
         </div>
       </div>
-      <div id="step2_container" class="mx_HomePage_col mx_Spacer" style="display: none;">
+      <!-- <div id="step2_container" class="mx_HomePage_col mx_Spacer" style="display: none;">
         <div class="mx_HomePage_row">
           <div>
               <h2>2: Configure your app</h2>
@@ -348,14 +339,11 @@ body {
       </div> -->
       <div class="mx_HomePage_row mx_Center mx_Spacer">
          <p class="mx_Spacer">
-             <a id="back_to_riot_button" href="https://account.onescrin.com.ng/#/welcome" class="mx_FooterLink">
+             <a id="back_to_riot_button" href="#" class="mx_FooterLink">
                  Go to Desktop Site
              </a>
          </p>
       </div>
   </div>
 
-</body> 
-
-
-
+</body>

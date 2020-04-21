@@ -129,7 +129,7 @@ function onNewScreen(screen) {
 function makeRegistrationUrl(params) {
     let url;
     if (window.location.protocol === "vector:") {
-        url = 'https://riot.im/app/#/register';
+        url = 'https://go.potng.com#/register';
     } else {
         url = (
             window.location.protocol + '//' +
@@ -221,7 +221,7 @@ export async function loadApp() {
             <div>
                 <p>
                     {_t(
-                        "Your Riot configuration contains invalid JSON. Please correct the problem " +
+                        "Your Potng configuration contains invalid JSON. Please correct the problem " +
                         "and reload the page.",
                     )}
                 </p>
@@ -236,7 +236,7 @@ export async function loadApp() {
 
         const GenericErrorPage = sdk.getComponent("structures.GenericErrorPage");
         window.matrixChat = ReactDOM.render(
-            <GenericErrorPage message={errorMessage} title={_t("Your Riot is misconfigured")} />,
+            <GenericErrorPage message={errorMessage} title={_t("Your Potng is misconfigured")} />,
             document.getElementById('matrixchat'),
         );
         return;
@@ -283,7 +283,7 @@ export async function loadApp() {
             // Like the compatibility page, AWOOOOOGA at the user
             const GenericErrorPage = sdk.getComponent("structures.GenericErrorPage");
             window.matrixChat = ReactDOM.render(
-                <GenericErrorPage message={errorMessage} title={_t("Your Riot is misconfigured")} />,
+                <GenericErrorPage message={errorMessage} title={_t("Your PotNG is misconfigured")} />,
                 document.getElementById('matrixchat'),
             );
         });

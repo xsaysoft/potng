@@ -62,8 +62,8 @@ const template = [
         role: 'help',
         submenu: [
             {
-                label: 'Riot Help',
-                click() { shell.openExternal('https://about.riot.im/help'); },
+                // label: 'potng Help',
+                // click() { shell.openExternal('https://io.potng.com/help'); },
             },
         ],
     },

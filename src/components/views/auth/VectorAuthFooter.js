@@ -23,10 +23,10 @@ import { _t } from 'matrix-react-sdk/src/languageHandler';
 const VectorAuthFooter = () => {
     const brandingConfig = SdkConfig.get().branding;
     let links = [
-        {"text": "Blog", "url": "https://medium.com/@onescrin"},
-        {"text": "Twitter", "url": "https://twitter.com/onescrin"},
-        {"text": "Github", "url": "https://github.com/OneScrinTeam/one-screen-web"},
-        {"text": "LinkedIn", "url": "https://www.linkedin.com/mwlite/company/onescrin"},
+        // {"text": "Blog", "url": "https://medium.com/@PotNg"},
+        // {"text": "Twitter", "url": "https://twitter.com/PotNg"},
+        // {"text": "Github", "url": "https://github.com/PotNgTeam/one-screen-web"},
+        // {"text": "LinkedIn", "url": "https://www.linkedin.com/mwlite/company/PotNg"},
     ];
 
     if (brandingConfig && brandingConfig.authFooterLinks) {
@@ -45,7 +45,7 @@ const VectorAuthFooter = () => {
     return (
         <div className="mx_AuthFooter">
             {authFooterLinks}
-            <a href="https://onescrin.citural.com.ng" target="_blank" rel="noreferrer noopener">{ _t('Powered by OneScrin') }</a>
+            <a href="https://potng.com" target="_blank" rel="noreferrer noopener">{ _t('Powered by PotNg') }</a>
         </div>
     );
 };
