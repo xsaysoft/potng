@@ -51,7 +51,7 @@ export default class VectorAuthPage extends React.PureComponent {
             right: 0,
             bottom: 0,
             left: 0,
-            filter: 'blur(10px)',
+            filter: 'blur(1px)',
             background: pageStyle.background,
         };
 
